@@ -1,4 +1,4 @@
-using MeuProjeto.Models; 
+﻿using MeuProjeto.Models; 
 using System.Data.SqlClient; 
 using Microsoft.Data.SqlClient; 
 using System; 
@@ -11,8 +11,8 @@ class Program
         using(var contexto = new ProdutoContext()) 
         { 
             Console.WriteLine("Inserindo dados"); 
-            contexto.Produto.Add(new Produto{ Id = 100, Nome = "Prego" }); 
-            contexto.Produto.Add(new Produto{ Id = 200, Nome = "Parafuso"}); 
+            contexto.Produtos.Add(new Produto{ Id = 100, Nome = "Prego" }); 
+            contexto.Produtos.Add(new Produto{ Id = 200, Nome = "Parafuso"}); 
             contexto.SaveChanges(); 
             } 
     } 

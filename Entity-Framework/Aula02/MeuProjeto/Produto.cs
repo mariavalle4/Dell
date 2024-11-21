@@ -1,4 +1,4 @@
-namespace MeuProjetoConsole.Models; 
+namespace MeuProjeto.Models; 
  
 public class Produto 
 { 
